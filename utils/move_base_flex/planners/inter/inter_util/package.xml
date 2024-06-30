@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>inter_util</name>
+  <version>1.0.0</version>
+  <description>The inter_util package</description>
+  <maintainer email="tim.seeger@campus.tu-berlin.de">Tim Seeger</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>mbf_costmap_core</build_depend>
+  <build_export_depend>mbf_costmap_core</build_export_depend>
+  <exec_depend>mbf_costmap_core</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

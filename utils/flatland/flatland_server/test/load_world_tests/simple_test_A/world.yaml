@@ -1,0 +1,44 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 0.675
+      map: map.yaml
+      name: 2d
+    - map: map3d.yaml
+      name:
+      - 3d
+      - 4d
+      - 5d
+    - map: map_lines.yaml
+      name:
+      - lines
+    - name: robot
+    models:
+    - model: turtlebot.model.yaml
+      name: turtlebot1
+    - model: turtlebot.model.yaml
+      name: turtlebot2
+      namespace: robot2
+      pose:
+      - 3
+      - 4.5
+      - 3.14159
+    - model: chair.model.yaml
+      name: chair1
+      pose:
+      - 1.2
+      - 3.5
+      - 2.123
+    - model: person.model.yaml
+      name: person1
+      pose:
+      - 0
+      - 1
+      - 2
+    properties:
+      position_iterations: 12
+      velocity_iterations: 11

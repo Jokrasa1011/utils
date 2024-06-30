@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 0
+      - 0.75
+      - 0.75
+      - 0.25
+      footprints:
+      - density: 0
+        radius: 0.5
+        type: circle
+      name: body
+      pose:
+      - 0
+      - 0
+      - 0
+      type: kinematic

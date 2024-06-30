@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+    <name>move_slow_and_clear</name>
+  <version>1.17.3</version>
+  <description>
+
+        move_slow_and_clear
+
+    </description>
+  <author>Eitan Marder-Eppstein</author>
+  <author>contradict@gmail.com</author>
+  <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
+  <maintainer email="mfergs7@gmail.com">Michael Ferguson</maintainer>
+  <maintainer email="ahoy@fetchrobotics.com">Aaron Hoy</maintainer>
+  <license>BSD</license>
+  <url>http://wiki.ros.org/move_slow_and_clear</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>rclcpp</build_depend>
+  <exec_depend>costmap_2d</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_core</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
+  <export><nav_core plugin="${prefix}/recovery_plugin.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

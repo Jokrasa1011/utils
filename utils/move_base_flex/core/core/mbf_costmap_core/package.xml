@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+    <name>mbf_costmap_core</name>
+  <version>0.4.0</version>
+  <description>
+        This package provides common interfaces for navigation specific robot actions. It contains the CostmapPlanner, CostmapController and CostmapRecovery interfaces. The interfaces have to be implemented by the plugins to make them available for Move Base Flex using the mbf_costmap_nav navigation implementation. That implementation inherits the mbf_abstract_nav implementation and binds the system to a local and a global costmap.
+    </description>
+  <author email="santos@magazino.eu">Jorge Santos</author>
+  <author email="spuetz@uos.de">Sebastian Pütz</author>
+  <maintainer email="spuetz@uos.de">Sebastian Pütz</maintainer>
+  <maintainer email="santos@magazino.eu">Jorge Santos</maintainer>
+  <license>BSD-3</license>
+  <url>http://wiki.ros.org/move_base_flex/mbf_costmap_core</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>mbf_abstract_core</build_depend>
+  <build_depend>mbf_utility</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <exec_depend>costmap_2d</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>mbf_abstract_core</exec_depend>
+  <exec_depend>mbf_utility</exec_depend>
+  <exec_depend>nav_core</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

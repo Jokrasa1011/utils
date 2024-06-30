@@ -1,0 +1,31 @@
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 1
+      - 1
+      - 1
+      - 0.5
+      footprints:
+      - center:
+        - 0
+        - 0
+        density: 30
+        radius: 1
+        sensor: true
+        type: circle
+      name: base_link_1
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    plugins:
+    - exclude:
+      - random_body
+      name: Bumper_B
+      publish_all_collisions: false
+      topic: collisions_B
+      type: Bumper
+      update_rate: 10
+      world_frame_id: world

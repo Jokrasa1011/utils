@@ -1,0 +1,28 @@
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 1
+      - 1
+      - 0
+      - 0.25
+      footprints:
+      - center:
+        - 0
+        - 0
+        density: 0
+        radius: 0.4
+        sensor: true
+        type: circle
+      name: base
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    plugins:
+    - dummy_param_float: 0.123456
+      dummy_param_int: 123456
+      dummy_param_string: wrong_message
+      name: dummy_test_plugin
+      type: DummyModelPlugin

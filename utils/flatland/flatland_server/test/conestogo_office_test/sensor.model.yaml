@@ -1,0 +1,35 @@
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 0.2
+      - 0.2
+      - 1
+      - 0.9
+      footprints:
+      - density: 1
+        layers:
+        - all
+        points:
+        - - -.5
+          - -.5
+        - - -.5
+          - 0.5
+        - - 0.5
+          - 0.5
+        - - 0.5
+          - -0.5
+        sensor: true
+        type: polygon
+      name: detector
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    plugins:
+    - body: detector
+      name: detector0
+      topic: detector_out
+      type: BoolSensor
+      update_rate: 10

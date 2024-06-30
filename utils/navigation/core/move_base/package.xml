@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+    <name>move_base</name>
+  <version>1.17.3</version>
+  <description>
+
+        The move_base package provides an implementation of an action (see the <a href="http://www.ros.org/wiki/actionlib">actionlib</a>
+    <a href="http://www.ros.org/wiki/nav_core">nav_core</a>
+    <a href="http://www.ros.org/wiki/nav_core">nav_core</a>
+    <a href="http://www.ros.org/wiki/costmap_2d">costmap_2d</a>
+  </description>
+  <author>Eitan Marder-Eppstein</author>
+  <author>contradict@gmail.com</author>
+  <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
+  <maintainer email="mfergs7@gmail.com">Michael Ferguson</maintainer>
+  <maintainer email="ahoy@fetchrobotics.com">Aaron Hoy</maintainer>
+  <license>BSD</license>
+  <url>http://wiki.ros.org/move_base</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>base_local_planner</build_depend>
+  <build_depend>clear_costmap_recovery</build_depend>
+  <build_depend>navfn</build_depend>
+  <build_depend>rotate_recovery</build_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>costmap_2d</exec_depend>
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>move_base_msgs</exec_depend>
+  <exec_depend>nav_core</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>base_local_planner</exec_depend>
+  <exec_depend>clear_costmap_recovery</exec_depend>
+  <exec_depend>navfn</exec_depend>
+  <exec_depend>rotate_recovery</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

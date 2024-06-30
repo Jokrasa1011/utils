@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 1
+      map: map.yaml
+      name: 2d
+    models:
+    - model: turtlebot.model.yaml
+      name: turtlebot1
+      pose:
+      - 0
+      - 0
+      - 0
+    properties: {}

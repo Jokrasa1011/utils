@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>spencer_tracking_rviz_plugin</name>
+  <version>1.0.8</version>
+  <description>
+     RViz plugin for visualizing tracked and detected persons and groups
+  </description>
+  <author email="linder@cs.uni-freiburg.de">Timm Linder</author>
+  <maintainer email="linder@cs.uni-freiburg.de">Timm Linder</maintainer>
+  <license>BSD; CC BY 3.0 (Fugue Icons by Yusuke Kamiyamane)</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>pedsim</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>spencer_tracking_msgs</build_depend>
+  <build_depend>spencer_social_relation_msgs</build_depend>
+  <build_depend>spencer_human_attribute_msgs</build_depend>
+  <build_depend>roslib</build_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>spencer_tracking_msgs</exec_depend>
+  <exec_depend>spencer_social_relation_msgs</exec_depend>
+  <exec_depend>spencer_human_attribute_msgs</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <export><rviz plugin="${prefix}/plugin_description.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

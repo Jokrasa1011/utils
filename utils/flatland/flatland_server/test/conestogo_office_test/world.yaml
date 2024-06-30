@@ -1,0 +1,45 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 1
+      map: map.yaml
+      name: 2d
+    - color:
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.5
+      map: map3d.yaml
+      name: 3d
+    models:
+    - model: cleaner.model.yaml
+      name: cleaner1
+      pose:
+      - 12
+      - 0
+      - 0
+    - model: walker.model.yaml
+      name: walker1
+      pose:
+      - 0
+      - 0
+      - 0
+    - model: sensor.model.yaml
+      name: sensor
+      pose:
+      - 2
+      - 0
+      - 0
+    plugins:
+    - double_wall: true
+      layer: 2d
+      name: test1
+      num_of_walls: 10
+      robot_name: cleaner1
+      type: RandomWall
+      wall_wall_dist: 1
+    properties: {}

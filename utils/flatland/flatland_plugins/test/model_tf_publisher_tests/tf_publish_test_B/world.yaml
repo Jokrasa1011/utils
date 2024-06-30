@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 1
+      map: ../tf_publish_test_A/map_1.yaml
+      name: layer_1
+    models:
+    - model: robot.model.yaml
+      name: robot1
+      pose:
+      - 8
+      - 6
+      - -0.575958653
+    properties: {}

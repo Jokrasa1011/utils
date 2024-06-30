@@ -1,0 +1,6 @@
+/**:
+  ros__parameters:
+  - builder: doxygen
+    file_patterns: '*.c *.cpp *.h *.cc *.hh *.py *.md *.rst'
+    homepage: http://wiki.ros.org/move_base_flex
+    name: Move Base Flex

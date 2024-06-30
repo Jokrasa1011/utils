@@ -1,0 +1,9 @@
+/**:
+  ros__parameters:
+    data: random_file.dat
+    origin:
+    - 0
+    - 0
+    - 0
+    scale: 1
+    type: line_segments

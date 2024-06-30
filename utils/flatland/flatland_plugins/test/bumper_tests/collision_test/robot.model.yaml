@@ -1,0 +1,63 @@
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 1
+      - 1
+      - 1
+      - 0.5
+      footprints:
+      - center:
+        - 0
+        - 0
+        density: 30
+        radius: 1
+        sensor: true
+        type: circle
+      name: base_link_1
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    - color:
+      - 1
+      - 1
+      - 1
+      - 0.5
+      footprints:
+      - center:
+        - 0
+        - 0
+        density: 1
+        radius: 0.4
+        type: circle
+      name: base_link_2
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    joints:
+    - bodies:
+      - anchor:
+        - 0
+        - 0
+        name: base_link_1
+      - anchor:
+        - 0
+        - 0
+        name: base_link_2
+      name: bodies_weld
+      type: weld
+    plugins:
+    - name: Bumper_A
+      type: Bumper
+    - exclude:
+      - base_link_1
+      name: Bumper_B
+      publish_all_collisions: false
+      topic: collisions_B
+      type: Bumper
+      update_rate: 10
+      world_frame_id: world

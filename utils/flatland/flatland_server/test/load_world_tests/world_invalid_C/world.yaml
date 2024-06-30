@@ -1,0 +1,22 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 0
+      map: map.yaml
+      name: 2d
+      random_param_1: 123
+      random_param_2: 123
+      random_param_3: 123
+    - color:
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.5
+      map: map3d.yaml
+      name: 3d
+    models: []
+    properties: {}

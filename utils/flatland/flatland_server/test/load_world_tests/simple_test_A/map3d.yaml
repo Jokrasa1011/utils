@@ -1,0 +1,11 @@
+/**:
+  ros__parameters:
+    free_thresh: 0.2234
+    image: map3d.png
+    negate: 0
+    occupied_thresh: 0.5153
+    origin:
+    - 0.0
+    - 0.0
+    - 0.0
+    resolution: 1.5

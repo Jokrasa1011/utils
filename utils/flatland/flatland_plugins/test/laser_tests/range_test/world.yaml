@@ -1,0 +1,26 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 1
+      map: map_1.yaml
+      name: layer_1
+    - color:
+      - 0
+      - 1
+      - 0
+      - 1
+      map: map_2.yaml
+      name: layer_2
+    models:
+    - model: robot.model.yaml
+      name: robot1
+      namespace: r
+      pose:
+      - 5
+      - 5
+      - 0
+    properties: {}

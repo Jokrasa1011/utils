@@ -1,0 +1,33 @@
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 1
+      - 1
+      - 0
+      - 1
+      footprints:
+      - center:
+        - 0
+        - 0
+        density: 1
+        radius: 0.1
+        type: circle
+      name: base_link
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    plugins:
+    - angle:
+        increment: 1.5707963267948966
+        max: -6.283185307179586
+        min: 0
+      body: base_link
+      layers:
+      - layer_1
+      name: laser_center
+      range: 5
+      type: Laser
+      update_rate: 5000

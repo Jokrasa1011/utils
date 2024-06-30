@@ -1,0 +1,11 @@
+/**:
+  ros__parameters:
+    layers: []
+    models:
+    - model: turtlebot.model.yaml
+      name: turtlebot
+      pose:
+      - 0
+      - 0
+      - 0
+    properties: {}

@@ -1,0 +1,9 @@
+/**:
+  ros__parameters:
+    data: map_lines.dat
+    origin:
+    - -1.2
+    - -5
+    - 1.23
+    scale: 0.1
+    type: line_segments

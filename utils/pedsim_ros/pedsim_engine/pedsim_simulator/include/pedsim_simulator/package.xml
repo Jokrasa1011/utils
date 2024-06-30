@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>pedsim_simulator</name>
+  <version>0.1.1</version>
+  <description>
+    Pedestrian Simulator: a social force model based simulation of pedestrians and their activities including, walking, grouping, etc
+  </description>
+  <author email="okal@cs.uni-freiburg.de">Billy Okal</author>
+  <author email="omar@email.todo">Omar Islas</author>
+  <maintainer email="okal@cs.uni-freiburg.de">Billy Okal</maintainer>
+  <maintainer email="omar@email.todo">Omar Islas</maintainer>
+  <license>BSD</license>
+  <url type="website">https://github.com/srl-freiburg/pedsim_ros</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>pedsim</build_depend>
+  <build_depend>pedsim_msgs</build_depend>
+  <build_depend>pedsim_srvs</build_depend>
+  <build_depend>pedsim_utils</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>flatland_msgs</build_depend>
+  <build_depend>roslib</build_depend>
+  <exec_depend>cmake_modules</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>pedsim</exec_depend>
+  <exec_depend>pedsim_msgs</exec_depend>
+  <exec_depend>pedsim_srvs</exec_depend>
+  <exec_depend>pedsim_utils</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>flatland_msgs</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

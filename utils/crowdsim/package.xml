@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>crowdsim</name>
+  <version>0.2.0</version>
+  <description>
+    Stateful pedestrian simulator extending pedsim_ros.
+  </description>
+  <author email="volodymyr.shcherbyna@alumni.tu-berlin.de">Volodymyr Shcherbyna</author>
+  <maintainer email="volodymyr.shcherbyna@alumni.tu-berlin.de">Volodymyr Shcherbyna</maintainer>
+  <license>BSD</license>
+  <url type="website">https://github.com/Arena-Rosnav/crowdnav</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>pedsim</build_depend>
+  <build_depend>pedsim_msgs</build_depend>
+  <build_depend>pedsim_simulator</build_depend>
+  <build_depend>pedsim_srvs</build_depend>
+  <build_depend>pedsim_utils</build_depend>
+  <build_depend>pedsim_sensors</build_depend>
+  <build_depend>pedsim_visualizer</build_depend>
+  <build_depend>crowdnav_agents</build_depend>
+  <build_depend>crowdnav_msgs</build_depend>
+  <exec_depend>pedsim</exec_depend>
+  <exec_depend>pedsim_msgs</exec_depend>
+  <exec_depend>pedsim_simulator</exec_depend>
+  <exec_depend>pedsim_srvs</exec_depend>
+  <exec_depend>pedsim_utils</exec_depend>
+  <exec_depend>pedsim_sensors</exec_depend>
+  <exec_depend>pedsim_visualizer</exec_depend>
+  <exec_depend>crowdnav_agents</exec_depend>
+  <exec_depend>crowdnav_msgs</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

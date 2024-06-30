@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>crowdsim_agents</name>
+  <version>0.0.0</version>
+  <description>The crowdsim_agents package</description>
+  <maintainer email="volodymyr.shcherbyna@alumni.tu-berlin.de">@voshch</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>crowdsim_msgs</build_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>crowdsim_msgs</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  <export><build_type>ament_cmake</build_type>
+  </export></package>

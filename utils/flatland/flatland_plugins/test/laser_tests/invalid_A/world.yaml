@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    layers:
+    - color:
+      - 0
+      - 1
+      - 0
+      - 1
+      map: ../range_test/map_1.yaml
+      name: layer_1
+    models:
+    - model: robot.model.yaml
+      name: robot1
+      pose:
+      - 5
+      - 5
+      - 0
+    properties: {}

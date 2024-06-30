@@ -1,0 +1,186 @@
+/**:
+  ros__parameters:
+    bodies:
+    - angular_damping: 0.125
+      color:
+      - 1
+      - 1
+      - 0
+      - 0.25
+      footprints:
+      - center:
+        - 0
+        - 0
+        density: 0
+        layers:
+        - all
+        radius: 1.777
+        sensor: false
+        type: circle
+      - density: 982.24
+        friction: 0.59
+        points:
+        - - -0.1
+          - 0.1
+        - - -0.1
+          - -0.1
+        - - 0.1
+          - -0.1
+        - - 0.1
+          - 0.1
+        restitution: 0.234
+        type: polygon
+      linear_damping: 0.1
+      name: base
+    - color:
+      - 1
+      - 0
+      - 0
+      - 0.25
+      footprints:
+      - density: 0
+        layers:
+        - 2d
+        points:
+        - - -.2
+          - 0.75
+        - - -.2
+          - -.75
+        - - 0.2
+          - -.75
+        - - 0.2
+          - 0.75
+        sensor: true
+        type: polygon
+      name: left_wheel
+      pose:
+      - -1
+      - 0
+      - 0
+      type: dynamic
+    - color:
+      - 0
+      - 1
+      - 0
+      - 0.25
+      footprints:
+      - density: 0
+        points:
+        - - -.2
+          - 0.75
+        - - -.2
+          - -.75
+        - - 0.2
+          - -.75
+        - - 0.2
+          - 0.75
+        type: polygon
+      name: right_wheel
+      pose:
+      - 1
+      - 0
+      - 0
+      type: dynamic
+    - color:
+      - 0
+      - 0
+      - 0
+      - 0.5
+      footprints:
+      - density: 0
+        layers:
+        - 3d
+        points:
+        - - -0.2
+          - 0
+        - - -0.2
+          - -5
+        - - 0.2
+          - -5
+        - - 0.2
+          - 0
+        type: polygon
+      name: tail
+      pose:
+      - 0
+      - 0
+      - 0.52
+      type: dynamic
+    - color:
+      - 0.2
+      - 0.4
+      - 0.6
+      - 1
+      footprints:
+      - center:
+        - 0.01
+        - 0.02
+        density: 0
+        layers: []
+        radius: 0.25
+        type: circle
+      name: antenna
+      pose:
+      - 0
+      - 0.5
+      - 0
+      type: dynamic
+    joints:
+    - angle: 1.57079633
+      bodies:
+      - anchor:
+        - -1
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: left_wheel
+      collide_connected: true
+      color:
+      - 0.1
+      - 0.2
+      - 0.3
+      - 0.4
+      damping: 0.5
+      frequency: 10
+      name: left_wheel_weld
+      type: weld
+    - bodies:
+      - anchor:
+        - 1
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: right_wheel
+      collide_connected: false
+      name: right_wheel_weld
+      type: weld
+    - bodies:
+      - anchor:
+        - 0
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: tail
+      name: tail_revolute
+      type: revolute
+    - bodies:
+      - anchor:
+        - 0
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: antenna
+      collide_connected: true
+      limits:
+      - -0.002
+      - 3.735
+      name: antenna_revolute
+      type: revolute

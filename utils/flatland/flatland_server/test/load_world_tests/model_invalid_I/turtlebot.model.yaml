@@ -1,0 +1,71 @@
+/**:
+  ros__parameters:
+    bodies:
+    - footprints:
+      - density: 0
+        radius: 1.777
+        type: circle
+      - density: 982.24
+        points:
+        - - -0.1
+          - 0.1
+        - - -0.1
+          - -0.1
+        - - 0.1
+          - -0.1
+        - - 0.1
+          - 0.1
+        type: polygon
+      name: base
+      type: dynamic
+    - footprints:
+      - density: 0
+        points:
+        - - -.2
+          - 0.75
+        - - -.2
+          - -.75
+        - - 0.2
+          - -.75
+        - - 0.2
+          - 0.75
+        type: polygon
+      name: left_wheel
+      type: dynamic
+    - footprints:
+      - density: 0
+        points:
+        - - -.2
+          - 0.75
+        - - -.2
+          - -.75
+        - - 0.2
+          - -.75
+        - - 0.2
+          - 0.75
+        type: polygon
+      name: right_wheel
+      type: dynamic
+    joints:
+    - bodies:
+      - anchor:
+        - -1
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: left_wheel
+      name: wheel_weld
+      type: weld
+    - bodies:
+      - anchor:
+        - 1
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: right_wheel
+      name: wheel_weld
+      type: weld
